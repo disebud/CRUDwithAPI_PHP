@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="20dp"
+tools:context=".activity.barcode.ListScan">
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="200sp"
+    android:padding="10sp"
+    app:srcCompat="@drawable/alibaba" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hasil Scan" />
+
+<EditText
+    android:id="@+id/editTextCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:ems="10"
+    android:inputType="number" />
+
+<Button
+    android:id="@+id/buttonBarcode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FF5722"
+    android:text="Barcode" />
+
+<Button
+    android:id="@+id/buttonQRCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FF9800"
+    android:text=" QRCode" />
+
+<Button
+    android:id="@+id/buttonSrc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    android:text="Search" />
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FF490F"
+    android:onClick="keActivitiKedua"
+    android:text="Product List" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="By Didik Setya Budif" />
+
+</RelativeLayout>
+
+</LinearLayout>
