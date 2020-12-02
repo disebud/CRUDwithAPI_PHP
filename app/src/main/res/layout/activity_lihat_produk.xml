@@ -4,8 +4,9 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:padding="10dp"
-tools:context=".activity.barcode.produk.LihatProduk">
+android:padding="20dp"
+    android:background="#FFF1DC"
+tools:context=".barcode.produk.LihatProduk">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -16,7 +17,8 @@ tools:context=".activity.barcode.produk.LihatProduk">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="50dp"
-        android:text="Liaht Data Produk"
+        android:textStyle="bold"
+        android:text="Data Produk"
         android:textAlignment="center"
         android:textSize="24sp" />
     <TextView
@@ -27,10 +29,12 @@ tools:context=".activity.barcode.produk.LihatProduk">
     <EditText
         android:id="@+id/et_kode_lihatProduk"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="#C8C8C8"
         android:focusable="false"
+        android:textStyle="bold"
         android:cursorVisible="false"
-        android:inputType="number"
+        android:paddingStart="15dp"
         android:maxLength="13">
     </EditText>
     <TextView
@@ -61,12 +65,28 @@ tools:context=".activity.barcode.produk.LihatProduk">
 
     <Button
         android:id="@+id/button_kembali_lihatProduk"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#FFB952"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@android:drawable/ic_media_previous"
         android:text="Kembali" />
+
+    <Button
+        android:id="@+id/button_update_lihatProduk"
+        android:backgroundTint="#FF9800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_save_24"
+        android:text="UPDATE" />
+
+    <Button
+        android:id="@+id/button_hapus_lihatProduk"
+        android:backgroundTint="#FF5722"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_delete_24"
+        android:text="DELETE" />
 
 </LinearLayout>
 </ScrollView>

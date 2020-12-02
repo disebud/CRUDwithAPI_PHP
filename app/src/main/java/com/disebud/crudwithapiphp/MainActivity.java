@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.disebud.crudwithapiphp.barcode.ListScan;
 
 public class MainActivity extends AppCompatActivity {
-    private int waktu_loading=4000;
+    private int waktu_loading=2000;
 
     //4000=4 detik
 

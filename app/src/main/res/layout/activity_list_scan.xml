@@ -5,13 +5,16 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
+    android:background="#FFF1DC"
 android:padding="20dp"
-tools:context=".activity.barcode.ListScan">
+tools:context=".barcode.ListScan">
 
 <ImageView
     android:id="@+id/imageView"
     android:layout_width="match_parent"
     android:layout_height="200sp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="30dp"
     android:padding="10sp"
     app:srcCompat="@drawable/alibaba" />
 
@@ -19,6 +22,7 @@ tools:context=".activity.barcode.ListScan">
     android:id="@+id/textView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:textStyle="bold"
     android:text="Hasil Scan" />
 
 <EditText
@@ -49,7 +53,7 @@ tools:context=".activity.barcode.ListScan">
     android:id="@+id/buttonSrc"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/holo_blue_dark"
+    android:backgroundTint="#FF9800"
     android:text="Search" />
 
 <Button
@@ -68,9 +72,10 @@ tools:context=".activity.barcode.ListScan">
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="By Didik Setya Budif" />
+        android:text="By Didik Setya Budi" />
 
 </RelativeLayout>
 

@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@drawable/bg_satu"
-tools:context=".activity.barcode.produk.ActivityProduk">
+android:background="#FFF1DC"
+    android:orientation="vertical"
+tools:context=".barcode.produk.ActivityProduk">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginBottom="10dp"
+        android:padding="10sp"
+        app:srcCompat="@drawable/alibaba" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="LIST PRODUCT"/>
+
 <ListView
     android:id="@+id/listViewProduk"
     android:layout_width="match_parent"
-    android:layout_above="@id/buttonProduk"
-    android:layout_height="400dp">
+    tools:listitem="@layout/list_item"
+    android:layout_height="380dp">
 </ListView>
 
 <Button
     android:id="@+id/buttonProduk"
-    style="?android:attr/borderlessButtonStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:backgroundTint="#FFAD35"
+    android:textStyle="bold"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
     android:layout_alignParentStart="true"
     android:layout_alignParentLeft="true"
-    android:layout_alignParentBottom="true"
     android:drawableLeft="@android:drawable/ic_input_add"
     android:text="Buat Baru" />
 
+    <Button
+        android:id="@+id/button_kembali_listproduk"
+        android:backgroundTint="#FF5722"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:drawableLeft="@android:drawable/ic_media_previous"
+        android:text="Kembali" />
 
-</RelativeLayout>
+
+</LinearLayout>
